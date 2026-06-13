@@ -13,7 +13,7 @@ BASE_URL = "https://datamall2.mytransport.sg/ltaodataservice/v3/BusArrival"
 
 def calculate_minutes(estimated_arrival):
     if not estimated_arrival:
-        return "No data"
+        return "-"
 
     arrival_time = datetime.fromisoformat(estimated_arrival)
     now = datetime.now(timezone.utc).astimezone()
